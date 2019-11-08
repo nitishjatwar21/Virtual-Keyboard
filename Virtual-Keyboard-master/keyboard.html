@@ -1,0 +1,380 @@
+<html>
+<head>
+	<title>VIRTUAL KEYBOARD</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<style type="text/css">
+.special,.number,.delete,.alpha,.ultra{
+	height: 50px;
+	width: 50px;
+	font-weight: 900;
+	font-size: 16PX;
+	border-radius: 5px;
+	}
+.alpha:hover{
+    background-color: grey;
+    color:white ;
+}
+
+.alpha:active {
+    background-color: grey;
+    color: #000000;
+}
+.special:hover{
+    background-color: grey;
+    color:white ;
+}
+
+.special:active {
+    background-color: grey;
+    color: #000000;
+}
+.number:hover{
+    background-color: grey;
+    color:white ;
+}
+
+.number:active {
+    background-color: grey;
+    color: #000000;
+}
+.delete:hover{
+    background-color: orange;
+    color:white ;
+}
+
+.delete:active {
+    background-color: red;
+    color: #000000;
+}
+.ultra:active {
+    background-color: white;
+    color: grey;
+}
+.ultra:visited {
+    background-color: white;
+    color: grey;
+}
+
+</style>
+
+<script type="text/javascript">
+	
+
+	function change(){
+		var textarea = document.getElementById('textarea1');
+		textarea.scrollTop = textarea.scrollHeight;
+	}
+	
+	function fun(value){
+		 keyboard.display.value+=value;
+	}
+	
+
+
+	var c = 0;
+	var f = 0;
+	var a = 0;
+	
+	function shiftkey(){
+			c=c+1;
+			a=a+1;
+			if(c<2){
+				document.getElementById('shift').style.backgroundColor="white" ;
+				document.getElementById('shift1').style.backgroundColor="white" ;
+				document.getElementById('q').value="Q"
+				document.getElementById('w').value="W"
+				document.getElementById('e').value="E"
+				document.getElementById('r').value="R"
+				document.getElementById('t').value="T"
+				document.getElementById('y').value="Y"
+				document.getElementById('u').value="U"
+				document.getElementById('i').value="I"
+				document.getElementById('o').value="O"
+				document.getElementById('p').value="P"
+				document.getElementById('a').value="A"
+				document.getElementById('s').value="S"
+				document.getElementById('d').value="D"
+				document.getElementById('f').value="F"
+				document.getElementById('g').value="G"
+				document.getElementById('h').value="H"
+				document.getElementById('j').value="J"
+				document.getElementById('k').value="K"
+				document.getElementById('l').value="L"
+				document.getElementById('z').value="Z"
+				document.getElementById('x').value="X"
+				document.getElementById('c').value="C"
+				document.getElementById('v').value="V"
+				document.getElementById('b').value="B"
+				document.getElementById('m').value="M"
+				document.getElementById('n').value="N"
+				document.getElementById('`').value="~"
+				document.getElementById('1').value="!"
+				document.getElementById('2').value="@"
+				document.getElementById('3').value="#"
+				document.getElementById('4').value="$"
+				document.getElementById('5').value="%"
+				document.getElementById('6').value="^"
+				document.getElementById('7').value="&"
+				document.getElementById('8').value="*"
+				document.getElementById('9').value="("
+				document.getElementById('0').value=")"
+				document.getElementById('-').value="_"
+				document.getElementById('=').value="+"
+				document.getElementById('[').value="{"
+				document.getElementById(']').value="}"
+				document.getElementById('\\').value="|"
+				document.getElementById(';').value=":"
+				document.getElementById('\'').value="\""
+				document.getElementById(',').value="<"
+				document.getElementById('/').value="?"
+				document.getElementById('.').value=">"
+				c=0;
+			};}
+			
+
+			
+
+			
+
+	
+	function small(){
+			if(a>0){
+				document.getElementById('shift').style.backgroundColor="buttonface" ;
+				document.getElementById('shift1').style.backgroundColor="buttonface" ;
+				document.getElementById('q').value="q"
+				document.getElementById('w').value="w"
+				document.getElementById('e').value="e"
+				document.getElementById('r').value="r"
+				document.getElementById('t').value="t"
+				document.getElementById('y').value="y"
+				document.getElementById('u').value="u"
+				document.getElementById('i').value="i"
+				document.getElementById('o').value="o"
+				document.getElementById('p').value="p"
+				document.getElementById('a').value="a"
+				document.getElementById('s').value="s"
+				document.getElementById('d').value="d"
+				document.getElementById('f').value="f"
+				document.getElementById('g').value="g"
+				document.getElementById('h').value="h"
+				document.getElementById('j').value="j"
+				document.getElementById('k').value="k"
+				document.getElementById('l').value="l"
+				document.getElementById('z').value="z"
+				document.getElementById('x').value="x"
+				document.getElementById('c').value="c"
+				document.getElementById('v').value="v"
+				document.getElementById('b').value="b"
+				document.getElementById('m').value="m"
+				document.getElementById('n').value="n"
+				document.getElementById('`').value="`"
+				document.getElementById('1').value="1"
+				document.getElementById('2').value="2"
+				document.getElementById('3').value="3"
+				document.getElementById('4').value="4"
+				document.getElementById('5').value="5"
+				document.getElementById('6').value="6"
+				document.getElementById('7').value="7"
+				document.getElementById('8').value="8"
+				document.getElementById('9').value="9"
+				document.getElementById('0').value="0"
+				document.getElementById('-').value="-"
+				document.getElementById('=').value="="
+				document.getElementById('[').value="["
+				document.getElementById(']').value="]"
+				document.getElementById('\\').value="\\"
+				document.getElementById(';').value=";"
+				document.getElementById('\'').value="\'"
+				document.getElementById(',').value="<"
+				document.getElementById('/').value="/"
+				document.getElementById('.').value="."
+				a=0;
+			};
+
+	}
+	function caps(){
+			f= f+1;
+			if (f<2){
+				document.getElementById('capslk').style.backgroundColor="white" ;
+			
+			
+			
+				
+			
+				
+				document.getElementById('q').value="Q"
+				document.getElementById('w').value="W"
+				document.getElementById('e').value="E"
+				document.getElementById('r').value="R"
+				document.getElementById('t').value="T"
+				document.getElementById('y').value="Y"
+				document.getElementById('u').value="U"
+				document.getElementById('i').value="I"
+				document.getElementById('o').value="O"
+				document.getElementById('p').value="P"
+				document.getElementById('a').value="A"
+				document.getElementById('s').value="S"
+				document.getElementById('d').value="D"
+				document.getElementById('f').value="F"
+				document.getElementById('g').value="G"
+				document.getElementById('h').value="H"
+				document.getElementById('j').value="J"
+				document.getElementById('k').value="K"
+				document.getElementById('l').value="L"
+				document.getElementById('z').value="Z"
+				document.getElementById('x').value="X"
+				document.getElementById('c').value="C"
+				document.getElementById('v').value="V"
+				document.getElementById('b').value="B"
+				document.getElementById('m').value="M"
+				document.getElementById('n').value="N"
+				
+				
+            }else{
+            	document.getElementById('capslk').style.backgroundColor="buttonface" ;
+				document.getElementById('q').value="q"
+				document.getElementById('w').value="w"
+				document.getElementById('e').value="e"
+				document.getElementById('r').value="r"
+				document.getElementById('t').value="t"
+				document.getElementById('y').value="y"
+				document.getElementById('u').value="u"
+				document.getElementById('i').value="i"
+				document.getElementById('o').value="o"
+				document.getElementById('p').value="p"
+				document.getElementById('a').value="a"
+				document.getElementById('s').value="s"
+				document.getElementById('d').value="d"
+				document.getElementById('f').value="f"
+				document.getElementById('g').value="g"
+				document.getElementById('h').value="h"
+				document.getElementById('j').value="j"
+				document.getElementById('k').value="k"
+				document.getElementById('l').value="l"
+				document.getElementById('z').value="z"
+				document.getElementById('x').value="x"
+				document.getElementById('c').value="c"
+				document.getElementById('v').value="v"
+				document.getElementById('b').value="b"
+				document.getElementById('m').value="m"
+				document.getElementById('n').value="n"
+				document.getElementById('`').value="`"
+				document.getElementById('1').value="1"
+				document.getElementById('2').value="2"
+				document.getElementById('3').value="3"
+				document.getElementById('4').value="4"
+				document.getElementById('5').value="5"
+				document.getElementById('6').value="6"
+				document.getElementById('7').value="7"
+				document.getElementById('8').value="8"
+				document.getElementById('9').value="9"
+				document.getElementById('0').value="0"
+				document.getElementById('-').value="-"
+				document.getElementById('=').value="="
+				document.getElementById('[').value="["
+				document.getElementById(']').value="]"
+				document.getElementById('\\').value="\\"
+				document.getElementById(';').value=";"
+				document.getElementById('\'').value="\'"
+				document.getElementById(',').value="<"
+				document.getElementById('/').value="/"
+				document.getElementById('.').value="."
+				f=0
+				
+            };}
+            
+	
+</script>
+
+</head>
+<body style="background-color: #C0C0C0 ;">
+	<div id="frame" style="margin: auto; width:85%; height:75%; margin-top: 15%">
+		<form name="keyboard" style="width:865PX; height:60%; margin: auto; ">
+			
+	<div name: "row1" style="height: 199px;">
+					<textarea id="textarea1" rows="6" cols="62" style="font-weight: 900;font-size: 2vw;width:805PX ;height:100%;" name="display" id="display">The cat was playing in the garden.</textarea>
+	        		<!--<input type="text"  style="width:805PX ;height:100%;padding: 0px; border-radius: 4px; font-weight: 900;font-size: 24px;font-family: arial bold;
+}" name="display" id="display" >-->
+   	</div>
+	<div>
+		
+		<input class="special" id="`" type="button" style="height: 50px; width: 50px ; margin-top: 5px;"  name="clear" value="`" onclick="change(), keyboard.display.value+='`' ">
+		<input class="number" id="1" type="button"  name="exp" value="1" onclick="change(),  fun(value),small()">
+		<input class="number" id="2" type="button"  name="exp" value="2" onclick="change(),  fun(value),small()">
+		<input class="number" id="3" type="button" name="exp" value="3" onclick="change(),  fun(value),small()">
+		<input class="number" id="4" type="button" name="exp" value="4" onclick="change(),  fun(value),small()">
+		<input class="number" id="5" type="button" name="exp" value="5" onclick="change(),  fun(value),small()">
+		<input class="number" id="6" type="button" name="exp" value="6" onclick="change(),  fun(value),small()">
+		<input class="number" id="7" type="button" name="exp" value="7" onclick="change(),  fun(value),small()">
+		<input class="number" id="8" type="button" name="exp" value="8" onclick="change(),  fun(value),small()">
+		<input class="number" id="9" type="button" name="exp" value="9" onclick="change(),  fun(value),small()">
+		<input class="number" id="0" type="button" name="exp" value="0" onclick="change(),  fun(value),small()">
+		<input class="special" id="-" type="button" name="-" value="_" onclick="change(),  fun(value),small()">
+		<input class="special" id="=" type="button" name="equal_to" value="=" onclick="change(),  fun(value),small()">
+		<input class="special" id="%" type="button"   name="%" value="÷" onclick="change(), keyboard.display.value+= value">
+		<input class="delete" id="delete" type="button"  name="del" value="C" onclick="change(), keyboard.display.value = keyboard.display.value.substring(0,keyboard.display.value.length - 1)" > 
+
+	</div>
+	<div>
+	  	<input class="special" id="tab" type="button"  style="height: 50px; width: 70px; margin-top: 5px" name="Tab" value="Tab" onclick="change(), keyboard.display.value+= '    '">
+		<input class="alpha" id="q" type="button" name="exp" value="q" onclick="change(),  fun(value),small()">
+		<input class="alpha" id="w" type="button" name="exp" value="w" onclick="change(),  fun(value),small()">
+		<input class="alpha" id="e" type="button" name="exp" value="e" onclick="change(),  fun(value),small()">
+		<input class="alpha" id="r" type="button" name="exp" value="r" onclick="change(),  fun(value),small()">
+		<input class="alpha" id="t" type="button" name="exp" value="t" onclick="change(),  fun(value),small()">
+		<input class="alpha" id="y" type="button" name="exp" value="y" onclick="change(),  fun(value),small()">
+				  	
+		<input class="alpha" id="u" type="button" name="exp" value="u" onclick="change(),  fun(value),small()">
+		<input class="alpha" id="i" type="button" name="exp" value="i" onclick="change(),  fun(value),small()">
+		<input class="alpha" id="o" type="button" name="exp" value="o" onclick="change(),  fun(value),small()">
+		<input class="alpha" id="p" type="button"  name="8" value="p" onclick="change(),  fun(value),small()">
+		<input class="special" id="[" type="button"  name="9" value="[" onclick="change(), keyboard.display.value+= value,small()">
+		<input class="special" id="]" type="button" name="X" value="]" onclick="change(), keyboard.display.value+= value,small()">
+		<input class="special" id="\" type="button" style="height: 50px; width: 85px; margin-top: 5px" name="exp" value="\" onclick="change(),  fun(value)">
+				   
+	</div>
+	<div>
+	  	<input class="ultra" id="capslk" type="button" style="height: 50px; width: 90px; margin-top: 5px"  name="" value="CapsLk" onclick="change(), caps()">
+	  	<input class="alpha" id="a" type="button" name="exp" value="a" onclick="change(), keyboard.display.value+= value,small()">
+	  	<input class="alpha" id="s" type="button" name="exp" value="s" onclick="change(),  fun(value),small()">
+	  	<input class="alpha" id="d" type="button" name="exp" value="d" onclick="change(),  fun(value),small()">
+	  	<input class="alpha" id="f" type="button" name="exp" value="f" onclick="change(),  fun(value),small()">
+	  	<input class="alpha" id="g" type="button" name="exp" value="g" onclick="change(),  fun(value),small()">
+	  	<input class="alpha" id="h" type="button" name="exp" value="h" onclick="change(),  fun(value),small()">
+		  	
+	  	<input class="alpha" id="j" type="button" name="exp" value="j" onclick="change(),  fun(value),small()">
+	  	<input class="alpha" id="k" type="button" name="exp" value="k" onclick="change(),  fun(value),small()">
+	  	<input class="alpha" id="l" type="button" name="exp" value="l" onclick="change(),  fun(value),small()">
+	    <input class="number" id=";" type="button"  name=";" value=";" onclick="change(),  fun(value),small()">
+	    <input class="number" id="'" type="button"  name="'" value="'" onclick="change(), keyboard.display.value+= value,small()">
+	    <input class="special" id="enter" type="button" style="height: 50px; width: 119px; margin-top: 5px" name="enter"  value=Enter onclick="change(), keyboard.display.value+='\n'">
+			   
+	</div>
+	<div>
+	  	<input class="ultra" id="shift" type="button" style="height: 50px; width: 135px; margin-top: 5px" name="exp" value="Shift" onclick="change(), shiftkey()">
+	  	<input class="alpha" id="z" type="button" name="exp" value="z" onclick="change(), fun(value),small()">
+	  	<input class="alpha" id="x" type="button" name="exp" value="x" onclick="change(), fun(value),small()">
+	  	<input class="alpha" id="c" type="button" name="exp" value="c" onclick="change(), fun(value),small()">
+	  	<input class="alpha" id="v" type="button" name="exp" value="v" onclick="change(),  fun(value),small()">
+	  	<input class="alpha" id="b" type="button" name="exp" value="b" onclick="change(),  fun(value),small()">
+	  	<input class="alpha" id="n" type="button" name="exp" value="n" onclick="change(),  fun(value),small()">
+				  	
+	  	<input class="alpha" id="m" type="button" name="exp" value="m" onclick="change(),  fun(value),small()">
+	  	<input class="special" id="," type="button" name="exp" value="," onclick="change(),  fun(value),small()">
+	  	<input class="special" id="." type="button" name="exp" value="." onclick="change(),  fun(value),small()">
+	    <input class="special" id="/" type="button"  name="/" value="/" onclick="change(), keyboard.display.value+= value,small()">
+	    <input class="ultra" id="shift1" type="button" style="height: 50px; width: 128px; margin-top: 5px"  name="" value="Shift" onclick="change(), shiftkey()">
+				    
+	</div>
+	<div>
+		<input class="special" id="ctrl" type="button" style="height: 50px; width: 105px; margin-top: 5px"  name="ctrl"  value="ctrl" onclick="change(), keyboard.display.value+=''">
+	    <input class="number" id="alt" type="button" style="height: 50px; width: 105px; margin-top: 5px"   name="alt"  value=alt onclick="change(), keyboard.display.value+= ''">
+	    <input class="special" id="space" type="button" style="height: 50px; width: 370px; margin-top: 5px" name="space"  value=space onclick="change(), keyboard.display.value+= ' '">
+	    <input class="number" id="alt" type="button" style="height: 50px; width: 105px; margin-top: 5px"  name="alt"  value=alt onclick="change(), keyboard.display.value+= ''">
+	    <input class="special" id="ctrl"  type="button" style="height: 50px; width: 105px; margin-top: 5px"  name="ctrl"  value="ctrl" onclick="change(), keyboard.display.value+=''">
+				   
+				</div>
+
+</body>
+</html>
